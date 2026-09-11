@@ -10,3 +10,7 @@ playwright-report/
 
 api key.txt
 *key*.txt
+
+*.xlsx
+*.csv
+data/raw/
