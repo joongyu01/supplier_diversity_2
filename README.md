@@ -1,12 +1,12 @@
 # Supplier Diversity · 공공구매 물품 조사
 
-인증 변경 공고는 [공고 모니터 화면](https://joongyu01.github.io/supplier_diversity/cancellations.html)에서 확인합니다.
+인증 변경 공고는 [공고 모니터 화면](https://joongyu01.github.io/supplier_diversity_2/cancellations.html)에서 확인합니다.
 GitHub Actions가 매일 한국시간 08:23에 고용노동부 관서의 인증취소·반납 관련 공고를 수집합니다.
 범위·실행 방법·판정 한계는 [운영 문서](docs/cancellation-monitor.md)를 참고하세요.
 
 사회적기업, 장애인기업, 여성기업, 중소기업, 중증장애인생산품 생산시설의 **나라장터 등록 공급물품**을 조사하는 프로젝트입니다.
 
-- 웹사이트: https://joongyu01.github.io/supplier_diversity/
+- 웹사이트: https://joongyu01.github.io/supplier_diversity_2/
 - 데이터 출처: [조달청 나라장터 사용자정보 서비스](https://www.data.go.kr/data/15129466/openapi.do)
 - 화면: 물품·업체 검색, 기업 유형·지역 필터, 조회 결과 CSV 다운로드, 인증 근거 링크
 - 초기 상태: **실제 API 데이터 수집 전**. 예시 업체나 문서의 샘플 응답을 실제 조사 결과로 게시하지 않습니다.
@@ -77,3 +77,4 @@ docs/api-notes.md       확인된 명세와 한계
 ```
 
 브라우저에는 인증키가 전달되지 않습니다. Actions가 API를 호출하고 정적 JSON을 생성하므로 Pages의 서버 부재와 브라우저 CORS 제약을 피합니다. 공개 결과는 업체명·사업자등록번호·지역·기업 유형 근거·물품 정보로 제한하며 대표자명·상세주소·연락처는 저장하지 않습니다.
+
