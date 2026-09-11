@@ -1,0 +1,1053 @@
+{
+  "schemaVersion": 1,
+  "lastSuccessfulScanAt": "2026-09-11T13:58:36+00:00",
+  "since": "2026-06-30",
+  "scope": "configured_moel_boards",
+  "officeCount": 49,
+  "directorySource": "https://labor.moel.go.kr/portalGuide/competence_find.do",
+  "directoryCheckedAt": "2026-09-11",
+  "requestCount": 355,
+  "coverage": [
+    {
+      "office": "andong",
+      "board": "notice",
+      "pages": 2,
+      "matches": 0
+    },
+    {
+      "office": "andong",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "ansan",
+      "board": "notice",
+      "pages": 4,
+      "matches": 0
+    },
+    {
+      "office": "ansan",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "anyang",
+      "board": "notice",
+      "pages": 4,
+      "matches": 0
+    },
+    {
+      "office": "anyang",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "boryeong",
+      "board": "notice",
+      "pages": 3,
+      "matches": 1
+    },
+    {
+      "office": "boryeong",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "bucheon",
+      "board": "notice",
+      "pages": 3,
+      "matches": 0
+    },
+    {
+      "office": "bucheon",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "busan",
+      "board": "notice",
+      "pages": 4,
+      "matches": 1
+    },
+    {
+      "office": "busan",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "busanbukbu",
+      "board": "notice",
+      "pages": 5,
+      "matches": 1
+    },
+    {
+      "office": "busanbukbu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "busandongbu",
+      "board": "notice",
+      "pages": 6,
+      "matches": 0
+    },
+    {
+      "office": "busandongbu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "changwon",
+      "board": "notice",
+      "pages": 9,
+      "matches": 1
+    },
+    {
+      "office": "changwon",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "cheonan",
+      "board": "notice",
+      "pages": 6,
+      "matches": 0
+    },
+    {
+      "office": "cheonan",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "cheongju",
+      "board": "notice",
+      "pages": 7,
+      "matches": 0
+    },
+    {
+      "office": "cheongju",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "chungju",
+      "board": "notice",
+      "pages": 6,
+      "matches": 0
+    },
+    {
+      "office": "chungju",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "daegu",
+      "board": "notice",
+      "pages": 16,
+      "matches": 0
+    },
+    {
+      "office": "daegu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "daeguseobu",
+      "board": "notice",
+      "pages": 7,
+      "matches": 1
+    },
+    {
+      "office": "daeguseobu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "daejeon",
+      "board": "notice",
+      "pages": 9,
+      "matches": 2
+    },
+    {
+      "office": "daejeon",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "gangneung",
+      "board": "notice",
+      "pages": 6,
+      "matches": 1
+    },
+    {
+      "office": "gangneung",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "gangwon",
+      "board": "notice",
+      "pages": 8,
+      "matches": 0
+    },
+    {
+      "office": "gangwon",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "goyang",
+      "board": "notice",
+      "pages": 6,
+      "matches": 0
+    },
+    {
+      "office": "goyang",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "gumi",
+      "board": "notice",
+      "pages": 3,
+      "matches": 0
+    },
+    {
+      "office": "gumi",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "gunsan",
+      "board": "notice",
+      "pages": 5,
+      "matches": 0
+    },
+    {
+      "office": "gunsan",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "gwangju",
+      "board": "notice",
+      "pages": 11,
+      "matches": 1
+    },
+    {
+      "office": "gwangju",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "gyeonggi",
+      "board": "notice",
+      "pages": 6,
+      "matches": 0
+    },
+    {
+      "office": "gyeonggi",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "iksan",
+      "board": "notice",
+      "pages": 6,
+      "matches": 0
+    },
+    {
+      "office": "iksan",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "incheonbukbu",
+      "board": "notice",
+      "pages": 8,
+      "matches": 0
+    },
+    {
+      "office": "incheonbukbu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "jeonju",
+      "board": "notice",
+      "pages": 6,
+      "matches": 0
+    },
+    {
+      "office": "jeonju",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "jinju",
+      "board": "notice",
+      "pages": 5,
+      "matches": 0
+    },
+    {
+      "office": "jinju",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "jungbu",
+      "board": "notice",
+      "pages": 7,
+      "matches": 1
+    },
+    {
+      "office": "jungbu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "mokpo",
+      "board": "notice",
+      "pages": 4,
+      "matches": 1
+    },
+    {
+      "office": "mokpo",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "pohang",
+      "board": "notice",
+      "pages": 4,
+      "matches": 0
+    },
+    {
+      "office": "pohang",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "pyeongtaek",
+      "board": "notice",
+      "pages": 5,
+      "matches": 1
+    },
+    {
+      "office": "pyeongtaek",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "seongnam",
+      "board": "notice",
+      "pages": 5,
+      "matches": 0
+    },
+    {
+      "office": "seongnam",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "seosan",
+      "board": "notice",
+      "pages": 2,
+      "matches": 0
+    },
+    {
+      "office": "seosan",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "seoul",
+      "board": "notice",
+      "pages": 10,
+      "matches": 2
+    },
+    {
+      "office": "seoul",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "seoulbukbu",
+      "board": "notice",
+      "pages": 6,
+      "matches": 0
+    },
+    {
+      "office": "seoulbukbu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "seouldongbu",
+      "board": "notice",
+      "pages": 5,
+      "matches": 2
+    },
+    {
+      "office": "seouldongbu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "seoulgangnam",
+      "board": "notice",
+      "pages": 4,
+      "matches": 0
+    },
+    {
+      "office": "seoulgangnam",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "seoulgwanak",
+      "board": "notice",
+      "pages": 6,
+      "matches": 2
+    },
+    {
+      "office": "seoulgwanak",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "seoulnambu",
+      "board": "notice",
+      "pages": 4,
+      "matches": 1
+    },
+    {
+      "office": "seoulnambu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "seoulseobu",
+      "board": "notice",
+      "pages": 7,
+      "matches": 3
+    },
+    {
+      "office": "seoulseobu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "taebaek",
+      "board": "notice",
+      "pages": 2,
+      "matches": 0
+    },
+    {
+      "office": "taebaek",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "tongyeong",
+      "board": "notice",
+      "pages": 4,
+      "matches": 0
+    },
+    {
+      "office": "tongyeong",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "uijeongbu",
+      "board": "notice",
+      "pages": 5,
+      "matches": 1
+    },
+    {
+      "office": "uijeongbu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "ulsan",
+      "board": "notice",
+      "pages": 6,
+      "matches": 1
+    },
+    {
+      "office": "ulsan",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "ulsandongbu",
+      "board": "notice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "ulsandongbu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "wonju",
+      "board": "notice",
+      "pages": 7,
+      "matches": 0
+    },
+    {
+      "office": "wonju",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "yangsan",
+      "board": "notice",
+      "pages": 7,
+      "matches": 0
+    },
+    {
+      "office": "yangsan",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "yeongju",
+      "board": "notice",
+      "pages": 3,
+      "matches": 0
+    },
+    {
+      "office": "yeongju",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "yeongwol",
+      "board": "notice",
+      "pages": 3,
+      "matches": 0
+    },
+    {
+      "office": "yeongwol",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    },
+    {
+      "office": "yeosu",
+      "board": "notice",
+      "pages": 6,
+      "matches": 0
+    },
+    {
+      "office": "yeosu",
+      "board": "publicnotice",
+      "pages": 1,
+      "matches": 0
+    }
+  ],
+  "notices": [
+    {
+      "id": "20260900383",
+      "title": "사회적기업 인증 취소 공고",
+      "publishedAt": "2026-09-10",
+      "url": "https://www.moel.go.kr/local/mokpo/news/notice/noticeView.do?bbs_seq=20260900383",
+      "sourceOffice": "광주지방고용노동청목포지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "사회적기업 인증 취소 공고(제2026-039호).pdf",
+          "url": "https://www.moel.go.kr/local/mokpo/common/downloadFile.do?file_seq=20260900679&bbs_seq=20260900383&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "6cb2d108d0118405c1dd696f3b72b784b5998d87d0af3bb2817f0cc835e8fadc",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260900276",
+      "title": "사회적기업 인증 반납",
+      "publishedAt": "2026-09-08",
+      "url": "https://www.moel.go.kr/local/pyeongtaek/news/notice/noticeView.do?bbs_seq=20260900276",
+      "sourceOffice": "경기지방고용노동청평택지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "사회적기업 인증 반납 공고_주식회사청인씨앤씨.pdf",
+          "url": "https://www.moel.go.kr/local/pyeongtaek/common/downloadFile.do?file_seq=20260900477&bbs_seq=20260900276&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "733a8409f4d977f0df61268e8e5ce6a1289c476bd195024c7697df85f2cdcfce",
+      "kind": "surrender_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260900127",
+      "title": "사회적기업 인증 취소 공고",
+      "publishedAt": "2026-09-02",
+      "url": "https://www.moel.go.kr/local/gangneung/news/notice/noticeView.do?bbs_seq=20260900127",
+      "sourceOffice": "중부지방고용노동청강릉지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "사회적기업 인증취소 공고(속초중앙시장활어공동구매주식회사).pdf",
+          "url": "https://www.moel.go.kr/local/gangneung/common/downloadFile.do?file_seq=20260900179&bbs_seq=20260900127&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "696db982d1553e8cda48cf33c32e6a97a550d49fb31c75752da1177eecc24f0f",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260800891",
+      "title": "[공고 제2026-083] 사회적기업 인증 반납 수리 공고",
+      "publishedAt": "2026-08-28",
+      "url": "https://www.moel.go.kr/local/seouldongbu/news/notice/noticeView.do?bbs_seq=20260800891",
+      "sourceOffice": "서울지방고용노동청서울동부지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "사회적기업 인증 반납 수리 공고문(주식회사 29일).hwpx",
+          "url": "https://www.moel.go.kr/local/seouldongbu/common/downloadFile.do?file_seq=20260801638&bbs_seq=20260800891&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "5326f56fd94472639f0a7ce566cf94d47958a12cd271476012d8247c8fc88364",
+      "kind": "surrender_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260800668",
+      "title": "사회적기업 인증취소 공고",
+      "publishedAt": "2026-08-21",
+      "url": "https://www.moel.go.kr/local/seoulgwanak/news/notice/noticeView.do?bbs_seq=20260800668",
+      "sourceOffice": "서울지방고용노동청서울관악지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "서울관악지청공고제2026-08호(사회적기업 인증취소 공고).pdf",
+          "url": "https://www.moel.go.kr/local/seoulgwanak/common/downloadFile.do?file_seq=20260801199&bbs_seq=20260800668&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "75a0122def1434a1b9ac1103245818f28e76259d04b50d5885c03c317751a505",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260800667",
+      "title": "사회적기업 인증취소 공고",
+      "publishedAt": "2026-08-21",
+      "url": "https://www.moel.go.kr/local/seoulgwanak/news/notice/noticeView.do?bbs_seq=20260800667",
+      "sourceOffice": "서울지방고용노동청서울관악지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "서울관악지청공고제2026-07호(사회적기업 인증취소 공고).pdf",
+          "url": "https://www.moel.go.kr/local/seoulgwanak/common/downloadFile.do?file_seq=20260801198&bbs_seq=20260800667&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "dd08722b258408647af5acf27b5929e8c14c2c6c47ded40807e4c6e646b98d78",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260800654",
+      "title": "[2026-108] 사회적기업 인증취소 공고",
+      "publishedAt": "2026-08-21",
+      "url": "https://www.moel.go.kr/local/seoul/news/notice/noticeView.do?bbs_seq=20260800654",
+      "sourceOffice": "서울지방고용노동청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "(공고문) 사회적기업 인증취소 공고.pdf",
+          "url": "https://www.moel.go.kr/local/seoul/common/downloadFile.do?file_seq=20260801177&bbs_seq=20260800654&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "893ce58c04bb371aaf46634604d75ed2df9a0d52052e612c0f7f68436775182d",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260800549",
+      "title": "2026년 사회적기업 인증 취소 공고",
+      "publishedAt": "2026-08-18",
+      "url": "https://www.moel.go.kr/local/busan/news/notice/noticeView.do?bbs_seq=20260800549",
+      "sourceOffice": "부산지방고용노동청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "2026년 사회적기업 인증 취소 공고문.hwpx",
+          "url": "https://www.moel.go.kr/local/busan/common/downloadFile.do?file_seq=20260800963&bbs_seq=20260800549&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "bc86c5e04fc97589f21f2b74307a3bef6bc00e7e890dbd76fae86e802c340330",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260800303",
+      "title": "[제2026-172호] 사회적기업 인증 반납 수리 공고",
+      "publishedAt": "2026-08-10",
+      "url": "https://www.moel.go.kr/local/daejeon/news/notice/noticeView.do?bbs_seq=20260800303",
+      "sourceOffice": "대전지방고용노동청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "대전지방고용노동청공고제2026-172호(사회적기업 인증 반납 수리 공고).pdf",
+          "url": "https://www.moel.go.kr/local/daejeon/common/downloadFile.do?file_seq=20260800527&bbs_seq=20260800303&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "c478a3f50f34dc824fc8655e30b88e3f8e4837b1b5de1106df7f5a88c83a3cc7",
+      "kind": "surrender_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260800126",
+      "title": "사회적기업 인증취소 공고",
+      "publishedAt": "2026-08-04",
+      "url": "https://www.moel.go.kr/local/boryeong/news/notice/noticeView.do?bbs_seq=20260800126",
+      "sourceOffice": "대전지방고용노동청보령지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "사회적기업 인증 취소 공고.pdf",
+          "url": "https://www.moel.go.kr/local/boryeong/common/downloadFile.do?file_seq=20260800208&bbs_seq=20260800126&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "8fe27d01b374645e3d46e408399026ded955baf84d1daeac124db8320e3af2b6",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260800019",
+      "title": "사회적기업 인증 반납 수리 공고",
+      "publishedAt": "2026-08-03",
+      "url": "https://www.moel.go.kr/local/gwangju/news/notice/noticeView.do?bbs_seq=20260800019",
+      "sourceOffice": "광주지방고용노동청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "광주지방고용노동청 공고 제2026-161호(사회적기업 인증 반납 수리).pdf",
+          "url": "https://www.moel.go.kr/local/gwangju/common/downloadFile.do?file_seq=20260800028&bbs_seq=20260800019&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "2d1f753995eff0835161be245da25adb6d8feba71bd489edac14f8b25a7f4127",
+      "kind": "surrender_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260701080",
+      "title": "예비(부처형)사회적기업 지정 반납 수리 공고",
+      "publishedAt": "2026-07-31",
+      "url": "https://www.moel.go.kr/local/changwon/news/notice/noticeView.do?bbs_seq=20260701080",
+      "sourceOffice": "부산지방고용노동청창원지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "사회적기업 지정 반납 수리 공고(부산지방고용노동청창원지청 제2026-87호).pdf",
+          "url": "https://www.moel.go.kr/local/changwon/common/downloadFile.do?file_seq=20260701917&bbs_seq=20260701080&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "6246f01138709e2f6d3a26d2d84207a17fa690f1e863e582bc9c9cc856bcfe27",
+      "kind": "preliminary_enterprise",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260701078",
+      "title": "사회적기업 인증 취소 공고",
+      "publishedAt": "2026-07-31",
+      "url": "https://www.moel.go.kr/local/seoulseobu/news/notice/noticeView.do?bbs_seq=20260701078",
+      "sourceOffice": "서울지방고용노동청서울서부지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "서울서부지청공고제2026-65호(사회적기업 인증 취소 공고).pdf",
+          "url": "https://www.moel.go.kr/local/seoulseobu/common/downloadFile.do?file_seq=20260701913&bbs_seq=20260701078&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "7554fe341041fed38b6a496305c7509c9b41f4996afa07539c8249dfb473f9bc",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260701006",
+      "title": "사회적기업 인증 반납 수리 공고",
+      "publishedAt": "2026-07-29",
+      "url": "https://www.moel.go.kr/local/seoulseobu/news/notice/noticeView.do?bbs_seq=20260701006",
+      "sourceOffice": "서울지방고용노동청서울서부지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "서울서부지청공고제2026-64호(사회적기업 인증 반납 수리 공고).pdf",
+          "url": "https://www.moel.go.kr/local/seoulseobu/common/downloadFile.do?file_seq=20260701796&bbs_seq=20260701006&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "7c504d5b87a87ae75ff052b784869a188a561bba2709024fe5b6b59293d986cd",
+      "kind": "surrender_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260700974",
+      "title": "사회적기업 인증 반납 수리 공고",
+      "publishedAt": "2026-07-29",
+      "url": "https://www.moel.go.kr/local/seoulseobu/news/notice/noticeView.do?bbs_seq=20260700974",
+      "sourceOffice": "서울지방고용노동청서울서부지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "서울서부지청공고제2026-55호(사회적기업 인증 반납신청 수리 공고).pdf",
+          "url": "https://www.moel.go.kr/local/seoulseobu/common/downloadFile.do?file_seq=20260701748&bbs_seq=20260700974&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "376e904df7751ebb501c480dc5c669b854063431105df11da99d0881d862346d",
+      "kind": "surrender_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260700903",
+      "title": "사회적기업 인증 반납",
+      "publishedAt": "2026-07-27",
+      "url": "https://www.moel.go.kr/local/daeguseobu/news/notice/noticeView.do?bbs_seq=20260700903",
+      "sourceOffice": "대구지방고용노동청대구서부지청",
+      "board": "notice",
+      "attachments": [],
+      "contentHash": "43eea27b49cd1723e699a5cc6411e478992e33bbc7b9e2c0b3a8dc2cb04f06ac",
+      "kind": "surrender_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260700853",
+      "title": "[2026-102] 사회적기업 인증취소 공고",
+      "publishedAt": "2026-07-24",
+      "url": "https://www.moel.go.kr/local/seoul/news/notice/noticeView.do?bbs_seq=20260700853",
+      "sourceOffice": "서울지방고용노동청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "(공고문) 사회적기업 인증취소 공고.pdf",
+          "url": "https://www.moel.go.kr/local/seoul/common/downloadFile.do?file_seq=20260701469&bbs_seq=20260700853&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "97af93b3e71d688ae0eb2ceae3ee66b7704c8d79b185a044fe35a31774c41a93",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260700852",
+      "title": "사회적기업 인증취소 공고(제2026-57호)",
+      "publishedAt": "2026-07-24",
+      "url": "https://www.moel.go.kr/local/ulsan/news/notice/noticeView.do?bbs_seq=20260700852",
+      "sourceOffice": "부산지방고용노동청울산지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "울산지청공고제2026-57호(사회적기업 인증 취소 공고).pdf",
+          "url": "https://www.moel.go.kr/local/ulsan/common/downloadFile.do?file_seq=20260701468&bbs_seq=20260700852&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "ac0d4df78cb1e6c44c3b744c60c9b77ed821031fdbdb4419c3dadeba0f187f7a",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260700842",
+      "title": "(공고 제2026-91호) 사회적기업 인증 반납 수리 공고",
+      "publishedAt": "2026-07-24",
+      "url": "https://www.moel.go.kr/local/seoulnambu/news/notice/noticeView.do?bbs_seq=20260700842",
+      "sourceOffice": "서울지방고용노동청서울남부지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "서울지방고용노동청서울남부지청 공고 제2026-91호.pdf",
+          "url": "https://www.moel.go.kr/local/seoulnambu/common/downloadFile.do?file_seq=20260701446&bbs_seq=20260700842&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "e31e0a8782d71a5083efc9051031f2e0e7b505a480c1b44869f9b2e5a1cdef47",
+      "kind": "surrender_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260700570",
+      "title": "[공고 제2026-82] 사회적기업 인증 반납 수리 공고",
+      "publishedAt": "2026-07-15",
+      "url": "https://www.moel.go.kr/local/seouldongbu/news/notice/noticeView.do?bbs_seq=20260700570",
+      "sourceOffice": "서울지방고용노동청서울동부지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "사회적기업 인증 반납 수리 공고문(한국참여자치장애인총연합회).hwpx",
+          "url": "https://www.moel.go.kr/local/seouldongbu/common/downloadFile.do?file_seq=20260700969&bbs_seq=20260700570&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "86323cec90a1d61f423227cdb341312ab1013d4c22d1889e560c042541b9adad",
+      "kind": "surrender_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260700438",
+      "title": "[제2026-156호] 사회적기업 인증취소 처분 공고",
+      "publishedAt": "2026-07-13",
+      "url": "https://www.moel.go.kr/local/daejeon/news/notice/noticeView.do?bbs_seq=20260700438",
+      "sourceOffice": "대전지방고용노동청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "대전지방고용노동청공고제2026-156호(사회적기업 인증취소 처분 공고) (1).pdf",
+          "url": "https://www.moel.go.kr/local/daejeon/common/downloadFile.do?file_seq=20260700741&bbs_seq=20260700438&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "52a9c69d49c8a4395603a8733f39d77a51de32649dbabf5944b45b8fd6c83a31",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260700358",
+      "title": "사회적기업 인증 취소 공고",
+      "publishedAt": "2026-07-09",
+      "url": "https://www.moel.go.kr/local/busanbukbu/news/notice/noticeView.do?bbs_seq=20260700358",
+      "sourceOffice": "부산지방고용노동청부산북부지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "인증 취소 공고(수정).pdf",
+          "url": "https://www.moel.go.kr/local/busanbukbu/common/downloadFile.do?file_seq=20260700596&bbs_seq=20260700358&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "0276dbee56b3b883606d9bb07df5fbcf1eb2e140f9b77b1754c13024f1bd079d",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260700215",
+      "title": "사회적기업 인증 반납 수리 공고",
+      "publishedAt": "2026-07-06",
+      "url": "https://www.moel.go.kr/local/jungbu/news/notice/noticeView.do?bbs_seq=20260700215",
+      "sourceOffice": "중부지방고용노동청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "중부지방고용노동청공고제2026-117호(사회적기업 인증 반납 수리 공고).pdf",
+          "url": "https://www.moel.go.kr/local/jungbu/common/downloadFile.do?file_seq=20260700332&bbs_seq=20260700215&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "812588c513d168dcadd198a4db6b23061c1ff0df7627f023519c7f9c17fb1179",
+      "kind": "surrender_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    },
+    {
+      "id": "20260700015",
+      "title": "사회적기업 인증 취소 공고",
+      "publishedAt": "2026-07-01",
+      "url": "https://www.moel.go.kr/local/uijeongbu/news/notice/noticeView.do?bbs_seq=20260700015",
+      "sourceOffice": "경기지방고용노동청의정부지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "사회적기업 인증취소 공고(2026.7.1.).pdf",
+          "url": "https://www.moel.go.kr/local/uijeongbu/common/downloadFile.do?file_seq=20260700018&bbs_seq=20260700015&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "1bfa6b63ec2e188c1443fc91e479486902da5672eb336cc82e8fea1e868bac2c",
+      "kind": "cancellation_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-11T13:58:36+00:00",
+      "lastChangedAt": "2026-09-11T13:58:36+00:00"
+    }
+  ]
+}
