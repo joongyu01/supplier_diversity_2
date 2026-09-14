@@ -5,7 +5,7 @@ const sources={sepp:'가치장터',goods:'꿈드래'};let data,page=1;
 function badge(b){return data.labels.map((label,i)=>{const bit=1<<i;if(!(b.masks[0]&bit))return '';const state=b.masks[1]&bit?'period':b.masks[2]&bit?'unknown':b.masks[4]&bit?'cancelled':'expired';return `<span class="status-badge ${state}">${esc(label)} · ${{period:'기간 내',unknown:'기간 정보 부족',cancelled:'취소 기록',expired:'기간 확인 필요'}[state]}</span>`;}).join('')||'<span class="status-badge unknown">사업장 명단 미연결 · 유형 미확인</span>';}
 function safeLink(url){try{const u=new URL(url);return u.protocol==='https:'&&['www.sepp.or.kr','www.goods.go.kr'].includes(u.hostname)?esc(u.href):'';}catch{return '';}}
 function render(reset=true){
- if(!data)return;if(reset)page=1;
+ if(!data)return;if(reset)page=1;renderCategoryButtons();
  const q=norm($('q').value),rawTerms=$('q').value.trim().split(/\s+/).map(norm).filter(Boolean),specific=rawTerms.filter(t=>!['제작','구매','주문','주문제작','납품'].includes(t)),terms=specific.length?specific:rawTerms,type=Number($('type').value),extra=Number($('extra').value),state=Number($('status').value),source=$('source').value;
  const score=o=>{const title=norm(o.title),needle=terms.join('');return !needle?0:title===needle?100:title.startsWith(needle)?70:terms.every(t=>title.includes(t))?40:10;};
  const results=[];
@@ -34,7 +34,7 @@ async function load(){try{
  const r=await fetch('./data/offers.json');if(!r.ok)throw Error('판매정보 파일을 받지 못했습니다');data=await r.json();
  const p=data.report;$('summary').textContent=`연결 업체 ${num(p.matchedBusinesses)}곳 · 연결 상품 ${num(p.matchedProducts)}건`;
  $('coverage').textContent=`${p.builtAt} 1차 수집: ${num(p.collectedProducts)}개 상품·서비스. 기존 명단에 연결되지 않은 ${num(p.unmatchedProducts)}건은 기본 검색에서 제외합니다. 전체 44만 업체의 판매품목을 확보한 것은 아닙니다.`;
- for(const id of ['q','submit','type','extra','status','source','pending','reset','category','subcategory'])$(id).disabled=false;
+ for(const id of ['q','submit','type','extra','status','source','pending','reset','category','subcategory','category-search'])$(id).disabled=false;
  for(const id of ['type','extra'])$(id).innerHTML=`<option value="-1">${id==='type'?'전체 유형':'선택 안 함'}</option>`+data.labels.map((l,i)=>`<option value="${i}">${esc(l)}</option>`).join('');
  $('source-details').innerHTML=`<p>명단 기준일 ${esc(p.registryBuiltAt)} · 수집 오류 ${p.failures.length}건 · 사업자번호 미확인 판매자 ${p.businessesWithUnverifiedIdentity}곳</p><table><thead><tr><th>수집 범위</th><th>원본 목록</th><th>이번 수집 대상</th><th>목록 확보</th></tr></thead><tbody>${p.coverage.map(c=>`<tr><td><a href="${safeLink(c.url)}" target="_blank" rel="noopener">${esc(c.label)} ↗</a></td><td>${num(c.sourceTotal)}</td><td>${num(c.listedProducts)}</td><td>${c.scopeComplete?'해당 범위 전체':'일부'}</td></tr>`).join('')}</tbody></table><p>상품별 확인일은 원문을 실제 수집한 날짜입니다. 수집 범위 밖의 상품·업체는 결과에 포함되지 않을 수 있습니다.</p>`;
  const params=new URLSearchParams(location.search);
@@ -43,6 +43,23 @@ async function load(){try{
  const selected=PURCHASE_CATEGORIES.find(c=>c.id===$('category').value);if(selected?.items.some(i=>i.id===params.get('item')))$('subcategory').value=params.get('item');
  $('q').value=params.get('q')||'';render();
  }catch(e){$('title').textContent='판매정보를 불러오지 못했습니다';$('coverage').textContent=e.message+' · 새로고침해 주세요.';}}
+function renderCategoryButtons(){
+ const query=norm($('category-search').value), selected=$('category').value, item=$('subcategory').value;
+ const matches=i=>norm(i.name+' '+i.terms.join(' ')).includes(query);
+ const groups=PURCHASE_CATEGORIES.filter(c=>!query||norm(c.name).includes(query)||c.items.some(matches));
+ const button=(label,group,leaf,active)=>`<button type="button" data-group="${group}" data-item="${leaf}" aria-pressed="${active}">${esc(label)}</button>`;
+ $('category-buttons').innerHTML=button('전체 구매군','','',!selected)+groups.map(c=>button(c.name,c.id,'',selected===c.id)).join('');
+ const shown=query?groups:PURCHASE_CATEGORIES.filter(c=>c.id===selected);
+ $('subcategory-buttons').innerHTML=shown.map(c=>`<div class="subcategory-section"><h3>${esc(c.name)} · 세부품목</h3><div class="category-buttons">${!query?button('전체 세부품목',c.id,'',!item):''}${c.items.filter(i=>!query||norm(c.name).includes(query)||matches(i)).map(i=>button(i.name,c.id,i.id,selected===c.id&&item===i.id)).join('')}</div></div>`).join('');
+ $('category-search-status').textContent=query&&!groups.length?'일치하는 분류가 없습니다. 다른 분류명으로 검색하거나 아래 상품·업체 검색을 이용하세요.':'';
+}
+$('category-search').oninput=()=>renderCategoryButtons();
+for(const id of ['category-buttons','subcategory-buttons'])$(id).onclick=e=>{
+ const b=e.target.closest('button[data-group]');if(!b||!data)return;
+ const group=b.dataset.group,item=b.dataset.item;
+ $('category').value=group;updateSubcategories();$('subcategory').value=item;render();
+ $(id).querySelector(`button[data-group="${group}"][data-item="${item}"]`)?.focus();
+};
 function updateSubcategories(){
  const group=PURCHASE_CATEGORIES.find(c=>c.id===$('category').value);
  $('subcategory').innerHTML='<option value="">전체 세부품목</option>'+(group?group.items.map(i=>`<option value="${i.id}">${esc(i.name)}</option>`).join(''):'');
@@ -51,5 +68,5 @@ function updateSubcategories(){
 $('category').onchange=()=>{updateSubcategories();render();};$('subcategory').onchange=()=>render();
 $('offer-search').onsubmit=e=>{e.preventDefault();render();};for(const id of ['type','extra','status','source','pending'])$(id).onchange=()=>render();
 document.addEventListener('click',e=>{const b=e.target.closest('[data-query]');if(b&&data){$('category').value='';updateSubcategories();$('q').value=b.dataset.query;render();}});
-$('reset').onclick=()=>{$('category').value='';updateSubcategories();$('q').value='';$('type').value=$('extra').value='-1';$('status').value='0';$('source').value='all';$('pending').checked=false;render();};
+$('reset').onclick=()=>{$('category-search').value='';$('category').value='';updateSubcategories();$('q').value='';$('type').value=$('extra').value='-1';$('status').value='0';$('source').value='all';$('pending').checked=false;render();};
 $('prev').onclick=()=>{page--;render(false);};$('next').onclick=()=>{page++;render(false);};load();
