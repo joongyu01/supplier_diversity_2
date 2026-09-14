@@ -1,7 +1,7 @@
 'use strict';
 const $ = id => document.getElementById(id);
-const TYPES = ['', '사회적기업', '중증장애인생산품 생산시설', '여성기업', '장애인기업'];
-const LABELS = ['전체', '사회적기업', '중증장애인생산품', '여성기업', '장애인기업'];
+const TYPES = ['', '중소기업', '여성기업', '장애인기업', '창업기업', '중증장애인생산품 생산시설', '장애인표준사업장', '사회적기업', '사회적협동조합'];
+const LABELS = ['전체', '중소기업', '여성기업', '장애인기업', '창업기업', '중증장애인생산품 생산시설', '장애인표준사업장', '인증 사회적기업', '사회적협동조합'];
 const STORE = 'supplier_diversity_2.procurementReviews';
 const norm = value => String(value || '').normalize('NFKC').toLowerCase().replace(/\s+/g, '');
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -44,15 +44,15 @@ function applySearch(resetPage = true) {
   const query = $('search').value.trim(), region = $('region').value, extra = $('extra-type').value;
   const candidates = suppliers.filter(c => c.currentTypes.length && (!region || c.region === region) && (!extra || c.currentTypes.includes(extra)))
     .map(c => ({c, hit: score(c, query, $('related').checked)})).filter(x => x.hit);
-  $('type-tabs').innerHTML = TYPES.map((t,i) => `<button class="type-tab ${t === activeType ? 'active' : ''}" aria-pressed="${t === activeType}" data-type="${escapeHTML(t)}">${LABELS[i]} <span>${number(candidates.filter(x => !t || x.c.currentTypes.includes(t)).length)}</span></button>`).join('');
+  $('type-tabs').innerHTML = TYPES.map((t,i) => `<button class="type-tab ${t === activeType ? 'active' : ''}" aria-pressed="${t === activeType}" data-type="${escapeHTML(t)}">${LABELS[i]} <span>${t && !data.coverage[t] ? '자료 미확보' : number(candidates.filter(x => !t || x.c.currentTypes.includes(t)).length)}</span></button>`).join('');
   matches = candidates.filter(x => !activeType || x.c.currentTypes.includes(activeType)).sort((a,b) => b.hit.score - a.hit.score || a.c.name.localeCompare(b.c.name, 'ko'));
   const pages = Math.max(1, Math.ceil(matches.length / 20)); page = Math.min(page, pages);
-  $('result-title').textContent = `${query ? '“' + query + '” ' : ''}업체 ${number(matches.length)}곳`;
+  $('result-title').textContent = activeType && !data.coverage[activeType] ? `${activeType} 자료 미확보` : `${query ? '“' + query + '” ' : ''}업체 ${number(matches.length)}곳`;
   $('result-context').textContent = `${region || '전국'} · ${activeType || '전체 유형'} · 공식 목록의 사업내용·생산품목 기준`;
-  $('coverage-note').textContent = activeType && !['사회적기업','중증장애인생산품 생산시설'].includes(activeType)
+  $('coverage-note').textContent = activeType && !data.coverage[activeType] ? `${activeType} 자격 근거 자료를 아직 확보하지 않았습니다. 다른 유형의 인증만으로 중소기업 여부를 추정하지 않습니다.` : activeType && !['사회적기업','중증장애인생산품 생산시설'].includes(activeType)
     ? `${activeType} 전체 명단 ${number(data.coverage[activeType].registryCount)}건 중 사업내용·품목을 확보한 ${number(data.coverage[activeType].searchableCount)}곳을 검색합니다. 전체 ${activeType}의 검색 결과가 아닙니다.`
     : '판매 품목이 구체적으로 기재되지 않은 업체는 사업내용을 보여드립니다. 자료 기준일 이후 변경 여부와 납품 가능 여부는 발주 전에 확인하세요.';
-  $('results').innerHTML = matches.slice((page-1)*20, page*20).map(({c, hit}) => `<article class="supplier-card"><div><span class="region-tag">${escapeHTML(c.region || '지역 미기재')}</span><h3><button class="supplier-name" data-detail="${c.bizno}">${escapeHTML(c.name)}</button></h3><div class="badges">${c.currentTypes.map(badge).join('')}${c.excludedAsLargeCorp ? '<span class="badge warn">대기업 목록 중복 · 확인 필요</span>' : ''}</div><span class="match-label">${hit.label}</span><p class="description">${escapeHTML(c.items.length ? c.items.join(' · ') : c.business)}</p><p class="contact-line">${escapeHTML(contactValue(c,'representative') ? '대표자 ' + contactValue(c,'representative') : contactValue(c,'facilityHead') ? '생산시설장 ' + contactValue(c,'facilityHead') : '대표자 미기재')} · 사업자번호 ${c.bizno}</p><p class="contact-line">${escapeHTML(contactValue(c,'phone') || '연락처 미기재')}</p><p class="contact-line">${escapeHTML(contactValue(c,'address') || '상세주소 미기재')}</p></div><div class="supplier-actions"><button class="primary" data-add="${c.bizno}">검토목록에 담기 +</button><button class="secondary" data-detail="${c.bizno}">업체 상세·연락처</button></div></article>`).join('') || '<div class="empty"><h3>일치하는 업체가 없습니다</h3><p>짧은 물품명으로 검색하거나, 관련 업종까지 보기·다른 유형·전국 조건으로 넓혀보세요.</p></div>';
+  $('results').innerHTML = matches.slice((page-1)*20, page*20).map(({c, hit}) => `<article class="supplier-card"><div><span class="region-tag">${escapeHTML(c.region || '지역 미기재')}</span><h3><button class="supplier-name" data-detail="${c.bizno}">${escapeHTML(c.name)}</button></h3><div class="badges">${c.currentTypes.map(badge).join('')}${c.excludedAsLargeCorp ? '<span class="badge warn">대기업 목록 중복 · 확인 필요</span>' : ''}</div><span class="match-label">${hit.label}</span><p class="description">${escapeHTML(c.items.length ? c.items.join(' · ') : c.business)}</p><p class="contact-line">${escapeHTML(contactValue(c,'representative') ? '대표자 ' + contactValue(c,'representative') : contactValue(c,'facilityHead') ? '생산시설장 ' + contactValue(c,'facilityHead') : '대표자 미기재')} · 사업자번호 ${c.bizno}</p><p class="contact-line">${escapeHTML(contactValue(c,'phone') || '연락처 미기재')}</p><p class="contact-line">${escapeHTML(contactValue(c,'address') || '상세주소 미기재')}</p></div><div class="supplier-actions"><button class="primary" data-add="${c.bizno}">검토목록에 담기 +</button><button class="secondary" data-detail="${c.bizno}">업체 상세·연락처</button></div></article>`).join('') || (activeType && !data.coverage[activeType] ? '<div class="empty"><h3>이 유형의 자료를 준비하고 있습니다</h3><p>업체가 없다는 뜻이 아닙니다. 확인된 자격 자료를 확보하면 검색에 반영합니다.</p></div>' : '<div class="empty"><h3>일치하는 업체가 없습니다</h3><p>짧은 물품명으로 검색하거나, 관련 업종까지 보기·다른 유형·전국 조건으로 넓혀보세요.</p></div>');
   $('page-label').textContent = `${page} / ${pages}`; $('prev').disabled = page === 1; $('next').disabled = page >= pages; $('export-results').disabled = !matches.length;
 }
 function detail(code) {
@@ -109,6 +109,7 @@ async function init() {
   try {
     const response = await fetch('./data/directory.json'); if (!response.ok) throw Error('HTTP ' + response.status);
     data = await response.json(); if (data.schemaVersion !== 1 || !Array.isArray(data.suppliers)) throw Error('자료 형식 오류');
+    $('extra-type').innerHTML = '<option value="">선택 안 함</option>' + TYPES.slice(1).map((t,i) => `<option value="${escapeHTML(t)}" ${!data.coverage[t] ? 'disabled' : ''}>${LABELS[i+1]}${!data.coverage[t] ? ' (자료 미확보)' : ''}</option>`).join('');
     suppliers = data.suppliers.map(c => ({...c,currentTypes:typesOf(c)}));
     $('region').insertAdjacentHTML('beforeend', [...new Set(suppliers.map(c => c.region).filter(Boolean))].sort((a,b) => a.localeCompare(b,'ko')).map(r => `<option>${escapeHTML(r)}</option>`).join(''));
     $('source-status').textContent = `${number(suppliers.length)}개 사업장 · 자료 기준 2026.06 ~ 07`;
