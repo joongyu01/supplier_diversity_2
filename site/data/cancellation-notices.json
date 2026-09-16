@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "lastSuccessfulScanAt": "2026-09-14T01:19:33+00:00",
+  "lastSuccessfulScanAt": "2026-09-16T01:34:23+00:00",
   "since": "2026-06-30",
   "scope": "configured_moel_boards",
   "officeCount": 49,
   "directorySource": "https://labor.moel.go.kr/portalGuide/competence_find.do",
   "directoryCheckedAt": "2026-09-11",
-  "requestCount": 351,
+  "requestCount": 352,
   "coverage": [
     {
       "office": "andong",
@@ -420,7 +420,7 @@
       "office": "seouldongbu",
       "board": "notice",
       "pages": 5,
-      "matches": 2
+      "matches": 3
     },
     {
       "office": "seouldongbu",
@@ -598,6 +598,25 @@
     }
   ],
   "notices": [
+    {
+      "id": "20260900457",
+      "title": "[서울동부고용노동지청 공고 제2026-84호] 사회적기업 인증 반납 수리 공고",
+      "publishedAt": "2026-09-14",
+      "url": "https://www.moel.go.kr/local/seouldongbu/news/notice/noticeView.do?bbs_seq=20260900457",
+      "sourceOffice": "서울지방고용노동청서울동부지청",
+      "board": "notice",
+      "attachments": [
+        {
+          "name": "서울동부지청공고제2026-84호(사회적기업 인증 반납 수리 공고).pdf",
+          "url": "https://www.moel.go.kr/local/seouldongbu/common/downloadFile.do?file_seq=20260900811&bbs_seq=20260900457&bbs_id=LOCAL1"
+        }
+      ],
+      "contentHash": "6d5c0cf0307bf183158c4ef67f8cc77f16a53f48063e308f9dadd2c86a68208c",
+      "kind": "surrender_notice",
+      "reviewStatus": "needs_review",
+      "firstSeenAt": "2026-09-16T01:34:23+00:00",
+      "lastChangedAt": "2026-09-16T01:34:23+00:00"
+    },
     {
       "id": "20260900383",
       "title": "사회적기업 인증 취소 공고",
